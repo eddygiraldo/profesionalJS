@@ -12,3 +12,4 @@ const buttonPlay = document.getElementById('PlayButton');
 const buttonMute = document.getElementById('MuteButton');
 buttonPlay.onclick = () => player.togglePlay();
 buttonMute.onclick = () => player.toggleMute();
+
