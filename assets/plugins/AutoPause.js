@@ -16,9 +16,9 @@ class AutoPause {
     observer.observe(this.player.media);
 
     document.addEventListener("visibilitychange", this.handlerVisibilityChange)
-  };
+  }
 
-  handlerIntersection = (entries) => {
+  handlerIntersection (entries) {
     const entry = entries[0];
 
     const isVisible = entry.intersectionRatio >= this.threshold;
@@ -30,7 +30,7 @@ class AutoPause {
     }
   }
 
-  handlerVisibilityChange = () => {
+  handlerVisibilityChange () {
     const isVisible = document.visibilityState === "visible";
 
     if (isVisible) {

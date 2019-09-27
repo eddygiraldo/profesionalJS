@@ -18,13 +18,13 @@ async function precache() {
   const cache = await caches.open('v1');
   return cache.addAll([
     '/',
-    '/index.html',
-    '/assets/index.js',
-    '/assets/MediaPlayer.js',
-    '/assets/plugins/AutoPlay.js',
-    '/assets/plugins/AutoPause.js',
-    '/assets/index.css',
-    // 'http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_30fps_normal.mp4'
+    './index.html',
+    './assets/index.js',
+    './assets/MediaPlayer.js',
+    './assets/plugins/AutoPlay.js',
+    './assets/plugins/AutoPause.js',
+    './assets/index.css',
+    './assets/big_buck_bunny.mp4'
   ]);
 }
 
